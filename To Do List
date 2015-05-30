@@ -1,0 +1,16 @@
+I was unable to complete the web application version in time for Tech Roanoke.  What follows is a list of (known) improvements/bugs that need to be worked.
+
+1.)  The app is currently using a set of fake data found in the "TempDataSource.js" file.  The data draw needs to come from the server.  The AJAX call has been architected, but not yet interfaced with the web app.  The basic architecture is found in the Login.php (sets the server and authenticatio token) and the "Test.php" file that pulls the data and presents a table of it.  To make this change:
+  1a.) Link the data call to the rest of the app via aryDATA.
+  2a.) Only present appropriate columns of data.
+  3a.) The associative array aryDATA needs to have its column names adusted to match the actual column names from the server data
+  4a.) Certain catagores of data like a person's party are stored as 1-7 and for the user should convert to words/icons
+  
+2.)  The app does not yet send data back to the server, this AJAX call needs to be created.
+
+3.)  The E-Walk presents names, and upon selection of a name returns the VoterID, but it does not yet present the input fields
+
+4.)  Instant Entry needs to be programmed in based on the data on the person's walk list.
+
+5.)  It has been tested on firefox and safari (iPhone) but no other platforms or devices
+
